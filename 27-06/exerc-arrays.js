@@ -32,7 +32,10 @@ console.log(faltantes);
         
         return aoQuadrado;
     }
-    
+    //usando o for of
+    // for (let n of numeros){
+    //aoQuadrado.push(n**2);}
+
     // Chamando a função com um array de números
     let resultado = elevarArrayAoQuadrado([34, 11, 5]);
     console.log(resultado);
@@ -136,7 +139,7 @@ console.log(palavraInvertida);
 
 function multiplicar (palavra, quantidade){
 
-    let palavrasRepetidas = ""; 
+let palavrasRepetidas = ""; 
 
 for (let i=0; i < quantidade; i++){
 palavrasRepetidas +=palavra
@@ -147,6 +150,18 @@ return palavrasRepetidas
 
 let resultado = multiplicar("batata", 3);
 console.log(resultado);
+
+//usando arrow function
+// const multiplicar (palavra, quantidade) =>{
+// let palavrasRepetidas = ""; 
+
+// for (let i=0; i < quantidade; i++){
+// palavrasRepetidas +=palavra
+    
+// }
+// return palavrasRepetidas };
+
+
 
 // 10. Escreva uma função que receba duas strings e retorne true se elas forem iguais ou false caso contrário.
 
